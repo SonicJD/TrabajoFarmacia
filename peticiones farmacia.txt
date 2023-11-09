@@ -31,3 +31,5 @@ con la enfermedad
 - El grupo hemos decidido que el color de fondo nos gustaría que sea ROSA PALO/PASTEL. 
 Muchas Gracias!!
 * color fondo
+
+*reducir indice (juntar apartados)
