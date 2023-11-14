@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cardiopatía</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cardiopatía</title>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
@@ -12,9 +12,11 @@
         <nav class="nav">
             <ul>
                 <li>
-                    <a href="posarlinkpertornar" class="Volver">
-                        <b>Volver</b>
-                    </a>
+                    <div class="volver">
+                        <a href="posarlinkpertornar" class="Volver">
+                            <b>Volver</b>
+                        </a>
+                    </div>
                 </li>
                 <li>
                     <b>
@@ -76,7 +78,6 @@
         </nav>
         <main>
             <article>Main</article>
-    
             <aside>
                 <table>
                     <tr>
@@ -172,13 +173,16 @@
                     <tr>
                         <th>
                             <p>
-                                <label for="Comentario"><b>Añade tu mensaje</b></label>
+                                <label for="Comentario"><b>Añade tu comentario</b></label>
                             </p>
                             <p>
                                 <div class="reset">
-                                    <input type="text" id="Comentario" name="comentario" placeholder="Comentario" size="40">
-                                    <input value="Añadir comentario" type="submit"> 
+                                    <form>
+                                        <textarea rows="2" cols="50"></textarea>
+                                        <input type="submit" value="Añadir comentario">
+                                    </form>                                      
                                 </div>
+
                             </p>
                         </th>
                     </tr>
