@@ -4,7 +4,7 @@ body{height: 100vh; width: 100vw;}
 nav {background-color: #ffd1dc; outline:10px solid white; flex: 1;margin:10px;border-radius: 25px;}
 ul{display: flex; flex-direction: row;justify-content:space-between; list-style: none; margin: 10px; padding: 3px 10px;}
 main{outline: 10px solid white; flex: 14; display: flex; flex-direction: row; text-align: justify;}
-article{background-color: white; flex: 4; margin-left: 10px; border-radius: 25px;padding: 15px 20px;}
+article{background-color: white; flex: 4; margin-left: 10px; border-radius: 25px;padding: 15px 20px; font-size: 2vh;}
 aside{background-color: #ffd1dc; flex: 1;margin-left: 10px; border-radius: 25px;margin-right:10px;padding: 15px 20px}
 footer{background-color: #ffd1dc; outline:10px solid white; flex: 2;margin:10px; border-radius: 25px;padding: 15px 20px}
 .Volver {text-decoration: none; color: black;}
@@ -12,9 +12,13 @@ footer{background-color: #ffd1dc; outline:10px solid white; flex: 2;margin:10px;
 .reset {display: inline;}
 table {border: #ffbccc 5px solid; border-spacing: 0;border-radius: 25px !important;padding: 10px 10px; background-color: white; margin: 1px;}
 th {text-align: center !important;}
-.dropdown {display: inline-block; position: relative; border: 1px solid #ffd1dc;text-decoration: none; color: black !important; font-size: 3vh}
+.dropdown {display: inline-block; position: relative; border: 1px solid #ffd1dc;text-decoration: none; color: black !important; font-size: 2.5vh}
 .dropdown-content {display: none; position: absolute; width: auto; overflow: auto;box-shadow: 0px 10px 10px 0px #ffbccc; background-color: #ffbccc;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown-content a {display: block;color: #000000;padding: 5px;text-decoration: none;}
 .dropdown-content a:hover {color: #ff90aa;background-color: #ffbccc;}
-.Volver { font-size: 3vh}
+.Volver { font-size: 2.5vh}
+.tooltip {text-decoration:none;position:relative;display: inline;}
+.tooltip span {display:none;}
+.tooltip span img {float:left;display:inline;}
+.tooltip:hover span {display:inline;position:absolute;overflow:hidden;}
