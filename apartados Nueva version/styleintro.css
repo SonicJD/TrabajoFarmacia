@@ -31,7 +31,6 @@ main{
     display: flex; 
     flex-direction: row; 
     text-align: justify;
-    height: 80vh;
 }
 article{
     flex: 4; 
@@ -66,21 +65,27 @@ footer{
     font-size: 2vh;
     
 }
-.reset {
-    display: inline;
-    
+.comentario {
+    display: inline-flex;
+   align-items: center;
+}
+.boton {
+    display: inline-flex;
+   align-items: center;
+   width: 2wh;
 }
 .chatList {
     border: #ffbccc 5px solid; 
     border-spacing: 0;
     border-radius: 25px !important;
-    padding: 10px 10px; 
+    padding: 5px 5px; 
     background-color: white; 
     margin: 1px;
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: scroll;
-    max-height: 64vh;}
+    height: 69vh;
+}
 .dropdown {
     display: inline-block; 
     position: relative; 
@@ -144,7 +149,32 @@ a:hover.Volver {
     color: #ff90aa;
 }
 textarea {
-    resize: none;
-    width: 18vw;
+    resize:none;
+    width: 26vh;
     min-width: 0.1vw;
+}
+.chatList::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.chatList::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.chatList::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.chatList::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.chatList::-webkit-scrollbar-thumb {
+    background-color: #ff90aa;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.chatList::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
