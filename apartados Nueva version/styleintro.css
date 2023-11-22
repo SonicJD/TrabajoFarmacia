@@ -150,31 +150,33 @@ a:hover.Volver {
 }
 textarea {
     resize:none;
-    width: 26vh;
+    width: 10vw;
     min-width: 0.1vw;
 }
 .chatList::-webkit-scrollbar {
     -webkit-appearance: none;
 }
-
 .chatList::-webkit-scrollbar:vertical {
-    width:10px;
+    width: 0.7vw;
 }
-
 .chatList::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
     display: none;
 } 
-
 .chatList::-webkit-scrollbar:horizontal {
     height: 10px;
 }
-
 .chatList::-webkit-scrollbar-thumb {
     background-color: #ff90aa;
     border-radius: 20px;
     border: 2px solid #f1f2f3;
 }
-
 .chatList::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
+.textoescrito {
+    font-size: 3vh;
+}
+.paragrafo {
+    font-size: 2.5vh;
+}
+.comment {margin: 0.2vh;}
