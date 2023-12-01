@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: arial;
+}
+body{
+    height: 100vh; 
+    width: 100vw;
+}
+.flexContainer{
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+}
+nav {
+    background-color: #ffd1dc; 
+    margin:1.1vh;
+    border-radius: 25px;}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    list-style: none;
+    margin-top: 1vh;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.1vh 0.5vw;
+}
+main{
+    display: flex; 
+    flex-direction: row; 
+    text-align: justify;
+}
+article{
+    flex: 4; 
+    margin-left: 0.8vw; 
+    border-radius: 25px;
+    padding: 1.5vh 1vw; 
+    font-size: 1.2em;}
+aside{
+    background-color: #ffd1dc; 
+    flex: 1;
+    border-radius: 25px;
+    margin-right:0.65vw;
+    padding: 1.5vh 1vw;
+    width: 4vw;
+}
+footer{
+    background-color: #ffd1dc; 
+    flex: 2;
+    margin:0.65vw; 
+    border-radius: 25px;
+    padding: 1.5vh 1vw;
+}
+.Volver {
+    text-decoration: none;
+    color: black; 
+    font-size: 1.5em;
+}
+.mensaje {
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+    margin-left: 1vh !important;
+    margin-right: 1vh !important;
+    text-align: center !important;
+    font-size: 1.3em;
+    
+}
+.comentario {
+    display: inline-flex;
+   align-items: center;
+}
+.boton {
+    display: inline-flex;
+   align-items: center;
+   width: 10vh;
+}
+.chatList {
+    border: #ffbccc 5px solid; 
+    border-spacing: 0;
+    border-radius: 25px !important;
+    padding: 0.5vh 0.2vw; 
+    background-color: white; 
+    margin: 1px;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 75vh;
+}
+/* 
+.dropdown {
+    display: inline-block; 
+    position: relative; 
+    border: 0.1 5vh solid #ffd1dc;
+    text-decoration: none; 
+    color: black !important; 
+    font-size: 2.5vh
+}
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    width: auto; 
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px #ffbccc; 
+    background-color: #ffbccc;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #ff90aa;
+    background-color: #ffbccc;
+}
+
+Por si nos piden hacer lo del dropdown, aqui esta el css*/
+.tooltip {
+    text-decoration:none;
+    display: inline;
+}
+.tooltip span {
+    display:none;
+    margin-left: 1.2vw;
+}
+.tooltip span img {
+    float:left;
+    display:inline;
+}
+.tooltip:hover span {
+    display:inline;
+    position:absolute;
+    overflow:hidden;
+}
+.fotointro {
+    height: 40vh; 
+    width: 33vw; 
+    float: inline-end; 
+    margin-right: 12.5em;
+    margin-top: 5em;
+}
+.Volver2 {
+    color: #ff90aa; 
+    font-size: 1.5em;
+}
+.textomanos {
+    margin-left: 5px;
+}
+a:hover.Volver {
+    color: #ff90aa;
+}
+textarea {
+    resize:none;
+    width: 10vw;
+    min-width: 0.1vw;
+}
+.chatList::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.chatList::-webkit-scrollbar:vertical {
+    width: 0.7vw;
+}
+.chatList::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+.chatList::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+.chatList::-webkit-scrollbar-thumb {
+    background-color: #ff90aa;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+.chatList::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+.textoescrito {
+    font-size: 3vh;
+}
+.paragrafo {
+    font-size: 2.5vh;
+}
+.comment {
+    margin: 0.2vh;
+}
+.volverfoto {
+    width: 3em; 
+    height: 1.5em;
+}
+.fotointro2 {
+    height: 40vh; 
+    width: 26vw; 
+    float: inline-end; 
+}
+.list-cases {
+    display: inline-block;
+}
+.list-cases img {
+   float: right;
+   display: none;
+}
+.list-cases:hover img { 
+   display: inline;
+}
+.text {
+    text-decoration: none; 
+    color:black
+}
+.fotointro3 {
+    height: 20vh; 
+    width: 13vw; 
+    float: inline-end; 
+    margin-left: 5px;
+}
+.fotointro4 {
+    width: 26vw; 
+}
