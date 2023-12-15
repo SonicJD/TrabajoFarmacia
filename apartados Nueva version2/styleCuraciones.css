@@ -1,11 +1,7 @@
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     font-family: arial;
-}
-body{
-    height: 100vh; 
-    width: 100vw;
 }
 .flexContainer{
     height: 100%; 
@@ -45,7 +41,7 @@ aside{
     border-radius: 25px;
     margin-right:0.65vw;
     padding: 1.5vh 1vw;
-    width: 4vw;
+    
 }
 footer{
     background-color: #ffd1dc; 
@@ -212,12 +208,60 @@ textarea {
     text-decoration: none; 
     color:black
 }
-.fotointro3 {
-    height: 20vh; 
-    width: 13vw; 
-    float: inline-end; 
-    margin-left: 5px;
+.menu_bar {
+    display: none;
 }
-.fotointro4 {
-    width: 26vw; 
+@media screen and (max-width:800px) {
+    nav {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: fixed;
+        border-radius: 0px;
+        left:-100%;
+        top: 30px;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+    nav ul {
+        display: block;
+    }
+    .menu_bar {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        background-color: #ffd1dc; 
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+    .bt-menu {
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+    }
+    main {
+        width: 100%;
+        display: block;
+    }
+    textarea {
+        width: 50vw;
+    }
+    .chatList::-webkit-scrollbar:vertical {
+        width: 0vw;
+    }
+    aside {
+        width: 98%;
+    }
+    .chatList {
+        height: 40vh;
+    }
 }
