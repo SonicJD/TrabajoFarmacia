@@ -19,15 +19,19 @@ ul{
     flex-direction: row;
     justify-content:space-between;
     list-style: none;
-    margin-top: 1vh;
-    margin-left: 1em;
-    margin-right: 1em;
     padding: 0.1vh 0.5vw;
+    margin: 1vh 1em;
 }
 main{
     display: flex; 
     flex-direction: row; 
     text-align: justify;
+}
+.fotomenu{
+    height: 25px;
+    width: 25px;
+    margin-left: 0.3em;
+    margin-top: 0.2em;
 }
 article{
     flex: 4; 
@@ -53,7 +57,7 @@ footer{
 .Volver {
     text-decoration: none;
     color: black; 
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 .mensaje {
     margin-top: 2vh !important;
@@ -71,7 +75,7 @@ footer{
 .boton {
     display: inline-flex;
    align-items: center;
-   width: 10vh;
+   width: auto;
 }
 .chatList {
     border: #ffbccc 5px solid; 
@@ -83,7 +87,7 @@ footer{
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 75vh;
+    height: 76.5vh;
 }
 /* 
 .dropdown {
@@ -143,7 +147,7 @@ Por si nos piden hacer lo del dropdown, aqui esta el css*/
 }
 .Volver2 {
     color: #ff90aa; 
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 .textomanos {
     margin-left: 5px;
@@ -155,6 +159,9 @@ textarea {
     resize:none;
     width: 10vw;
     min-width: 0.1vw;
+}
+body {
+    height: 100%;
 }
 .chatList::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -194,6 +201,17 @@ textarea {
     width: 26vw; 
     float: inline-end; 
 }
+.fotointro4 {
+    height: 20vw; 
+    width: 30vw; 
+}
+.fotointro3 {
+    height: 40vh; 
+    width: 26vw; 
+    float: inline-end; 
+    margin-right: 12.5em;
+    margin-top: 5em;
+}
 .list-cases {
     display: inline-block;
 }
@@ -211,7 +229,11 @@ textarea {
 .menu_bar {
     display: none;
 }
-@media screen and (max-width:800px) {
+.videos{
+    width: 37vw;
+    height:  34.3vh;
+}
+@media screen and (max-width:1300px){
     nav {
         width: 100%;
         height: auto;
@@ -228,6 +250,7 @@ textarea {
     }
     nav ul {
         display: block;
+        margin: 0px 5px;
     }
     .menu_bar {
         display: block;
@@ -237,16 +260,14 @@ textarea {
         background-color: #ffd1dc; 
         border-bottom: 1px solid rgba(255,255,255, .3);
     }
+    .paragrafo{
+        font-size: 2.3vh;
+    }
     .bt-menu {
         display: block;
         color: black;
         text-decoration: none;
         font-weight: bold;
-        font-size: 25px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        height: auto;
     }
     main {
         width: 100%;
@@ -259,9 +280,60 @@ textarea {
         width: 0vw;
     }
     aside {
-        width: 98%;
+        border-radius: 0px !important;
+        margin-right: 0px;
     }
     .chatList {
         height: 40vh;
+        border-radius: 0px !important;
+    }
+    .fotointro2 {
+        height: 30vw; 
+        width: 35vw; 
+        float: inline-end; 
+    }
+    .fotointro3 {
+        height: 75vw; 
+        width: 98vw; 
+        float:none;
+        margin-top: 0;
+        margin-right: 0; 
+    }
+    .fotointro4 {
+        height: 50vw; 
+        width: 55vw; 
+    }
+    footer {
+        border-radius: 0px !important;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .fotointro {
+        height: 30vw; 
+        width: 45vw; 
+        float: none;
+        margin-right: 0px;
+        margin-top: 15px; 
+    }
+    p {
+        margin:5px;
+    }
+    .videos{
+        width: 96vw;
+        height: 55vh;
+    }
+}
+@media screen and (max-width:1000px) and (orientation: landscape){
+    .videos{
+        width: 96vw;
+        height: 85vh;
+    }
+}
+@media screen and (max-width:500px) and (orientation:portrait){
+    .videos{
+        width: 96vw;
+        height: 24vh;
     }
 }
