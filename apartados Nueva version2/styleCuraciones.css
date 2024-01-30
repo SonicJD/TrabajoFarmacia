@@ -53,6 +53,7 @@ footer{
     margin:0.65vw; 
     border-radius: 25px;
     padding: 1.5vh 1vw;
+    height: auto;
 }
 .Volver {
     text-decoration: none;
@@ -87,7 +88,7 @@ footer{
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 76.5vh;
+    height: 76vh;
 }
 /* 
 .dropdown {
@@ -202,8 +203,7 @@ body {
     float: inline-end; 
 }
 .fotointro4 {
-    height: 20vw; 
-    width: 30vw; 
+    width: 23vw; 
 }
 .fotointro3 {
     height: 40vh; 
@@ -233,7 +233,7 @@ body {
     width: 37vw;
     height:  34.3vh;
 }
-@media screen and (max-width:1300px){
+@media screen and (max-width:800px){
     nav {
         width: 100%;
         height: auto;
@@ -299,9 +299,8 @@ body {
         margin-top: 0;
         margin-right: 0; 
     }
-    .fotointro4 {
-        height: 50vw; 
-        width: 55vw; 
+    .fotointro4 { 
+        width: 50vw; 
     }
     footer {
         border-radius: 0px !important;
@@ -335,5 +334,97 @@ body {
     .videos{
         width: 96vw;
         height: 24vh;
+    }
+}
+@media screen and (max-width:1300px){
+    nav {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: fixed;
+        border-radius: 0px;
+        left:-100%;
+        top: 30px;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+    nav ul {
+        display: block;
+        margin: 0px 5px;
+    }
+    .menu_bar {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        background-color: #ffd1dc; 
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+    .paragrafo{
+        font-size: 2.3vh;
+    }
+    .bt-menu {
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    main {
+        width: 100%;
+    }
+    textarea {
+        width: 50vw;
+    }
+    .chatList::-webkit-scrollbar:vertical {
+        width: 0vw;
+    }
+    aside {
+        border-radius: 0px !important;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .chatList {
+        height: 40vh;
+        border-radius: 0px !important;
+    }
+    .fotointro2 {
+        height: 30vw; 
+        width: 35vw; 
+        float: inline-end; 
+    }
+    .fotointro3 {
+        height: 75vw; 
+        width: 98vw; 
+        float:none;
+        margin-top: 0;
+        margin-right: 0; 
+    }
+    .fotointro4 { 
+        width: 50vw; 
+    }
+    footer {
+        border-radius: 0px !important;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .fotointro {
+        height: 30vw; 
+        width: 45vw; 
+        float: none;
+        margin-right: 0px;
+        margin-top: 15px; 
+    }
+    p {
+        margin:5px;
+    }
+    .videos{
+        width: 96vw;
+        height: 55vh;
     }
 }
